@@ -20,18 +20,23 @@
     "mpg123"
   ],
   "version": "0.2.5",
-  "author": "Nathan Rajlich <nathan@tootallnate.net> (http://tootallnate.net)",
+  "author": {
+    "name": "Nathan Rajlich",
+    "email": "nathan@tootallnate.net",
+    "url": "http://tootallnate.net"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/TooTallNate/node-speaker.git"
+    "url": "git://github.com/jabbink/node-speaker.git"
   },
   "bugs": {
-    "url": "https://github.com/TooTallNate/node-speaker/issues"
+    "url": "https://github.com/jabbink/node-speaker/issues"
   },
-  "homepage": "https://github.com/TooTallNate/node-speaker",
+  "homepage": "https://github.com/jabbink/node-speaker",
   "main": "./index.js",
   "scripts": {
-    "test": "node-gyp rebuild --mpg123-backend=dummy && mocha --reporter spec"
+    "test": "node-gyp rebuild --mpg123-backend=dummy && mocha --reporter spec",
+    "install": "node-gyp rebuild"
   },
   "dependencies": {
     "bindings": "~1.2.1",
@@ -41,5 +46,10 @@
   },
   "devDependencies": {
     "mocha": "~2.1.0"
-  }
+  },
+  "gypfile": true,
+  "readme": "node-speaker\r\n============\r\n\r\nall credits go to https://github.com/TooTallNate/node-speaker (I'm just a fork :( )\r\n\r\n###Updated\r\n- changed win32.c, so the module won't freeze on windows machines anymore",
+  "readmeFilename": "README.md",
+  "_from": "git://github.com/jabbink/node-speaker",
+  "_fromGithub": true
 }
